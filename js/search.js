@@ -3,9 +3,14 @@ function search() {
           searchBtn = document.querySelector('.search-block > button');
 
     searchBtn.addEventListener('click', () => {
-        console.log(input.value);
+
+        if (!input.value) {
+            console.log('Введите данные!');
+        } else {
+            console.log(input.value);
+        } 
+        
     })
-   
 }
 
 search();
